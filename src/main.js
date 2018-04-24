@@ -5,8 +5,16 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
 import router from './router'
+import httpPlugin from '@/assets/js/http'
+
+// 引入公共样式
+import './assets/css/style.css'
 
 Vue.use(ElementUI)
+
+// 加载 httpPlugin 插件（封装自axios）
+Vue.use(httpPlugin)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
